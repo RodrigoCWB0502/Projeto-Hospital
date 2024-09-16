@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Close</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='img/logo.png') }}"/>
+</head>
+<body>
+    <form method="post">
+        <img src="../static/img/img_fundo.jpg" class="background" alt="">
+        Username: <input type="text" name="username"><br>
+        Password: <input type="password" name="password"><br>
+        <input type="checkbox"> Manter conectado<br> <br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

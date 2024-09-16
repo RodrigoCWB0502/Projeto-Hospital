@@ -1,0 +1,25 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='img/logo.png') }}"/>
+    <title>Smart Close</title>
+</head>
+<body>
+    <header>
+        <h3>{% block header %}{% endblock %}</h3>
+    </header>
+    <main>
+        {% block content %}
+        
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>{% block footer %}&copy; 2024 Smart Close <br> Todos os direitos reservados{% endblock %}</p>
+    </footer>
+</body>
+</html>

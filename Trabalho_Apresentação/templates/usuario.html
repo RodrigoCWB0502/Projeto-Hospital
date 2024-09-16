@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br><br><br><br><br>
+<center>
+    <h2>Configuração de usuarios</h2>
+    <form action="{{ url_for('auth.register') }}" method="post">
+        Usuario: <input type="text" name="username"><br>
+        Senha: <input type="password" name="password"><br>
+        Cargo: <select name="role">
+            <option value="Admin">Admin</option>
+            <option value="Operador">Operador</option>
+            <option value="Estático">Estático</option>
+        </select><br>
+        <input class="submit1" type="submit" value="Create User">
+    </form>
+</center>
+<br> <br>
+<center>
+    <h2>Usuarios atuais:</h2> <br>  
+    <ul>
+        {% for user in users %}
+        <li>{{ user.username }} - {{ user.role }}
+            <form action="{{ url_for('auth.delete_user', user_id=user.id) }}" method="post">
+                <input class="submit2" type="submit" value="Delete">
+            </form>
+            <a href="{{ url_for('auth.edit_user', user_id=user.id) }}" class="submit5">Edit</a>
+        </li>
+        {% endfor %}
+    </ul>
+</center>
+<br><br><br><br><br><br><br>
+{% endblock %}

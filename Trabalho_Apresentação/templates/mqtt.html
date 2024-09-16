@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='img/logo.png') }}"/>
+    <title>Smart Close</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sensor.css') }}">
+</head>
+<body>
+    <section id="sensors" class="section">
+        <h2 class="section__title">Mensagens</h2>
+        <img class="section__img" src="{{ url_for('static', filename='img/img_sensor2.png') }}" alt="" />
+        <div id="mqttMessages" class="mqtt-messages">
+            <h3>Mensagens MQTT</h3>
+            <ul id="messagesList"></ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            &copy; 2024 Smart Close <br>
+            Todos os direitos reservados
+        </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
+    <script src="{{ url_for('static', filename='js/mqtt.js') }}"></script>
+</body>
+</html>

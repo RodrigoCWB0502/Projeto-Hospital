@@ -1,0 +1,28 @@
+/* static/css/main.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #e9ecef;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 10px;
+    color: darkblue;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}

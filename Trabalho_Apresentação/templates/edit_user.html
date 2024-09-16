@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<center>
+    <h2>Edit User</h2>
+    <form action="" method="post">
+        Usuario: <input type="text" name="username" value="{{ user.username }}"><br>
+        Cargo: <select name="role">
+            <option value="Admin" {% if user.role == 'Admin' %}selected{% endif %}>Admin</option>
+            <option value="Operador" {% if user.role == 'Operador' %}selected{% endif %}>Operador</option>
+            <option value="Estático" {% if user.role == 'Estático' %}selected{% endif %}>Estático</option>
+        </select><br>
+        <input class="submit1" type="submit" value="Update User">
+    </form>
+</center>
+{% endblock %}

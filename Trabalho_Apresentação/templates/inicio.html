@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='img/logo.png') }}"/>
+    <title>Smart Close</title>
+</head>
+<body>
+    <section class="inicio">
+        <a href="{{ url_for('auth.sensor') }}">Sensor</a>
+        <a href="{{ url_for('auth.login') }}">Log-Out</a>
+
+        <video class="inicio__background" autoplay muted loop>
+            <source src="{{ url_for('static', filename='video/video_projeto.mp4') }}" type="video/mp4" />
+        </video>
+        <div class="inicio__foreground">
+            <h1 class="inicio__title">Postos de saúde inteligentes</h1>
+            <p class="inicio__text">
+                Deixando os postos de saúde mais inteligentes e eficientes
+            </p> <br>
+        </div>
+    </section>
+    <section class="section">
+        <h2 class="section__title">Sobre o projeto</h2>
+        <p class="section__text">
+            O projeto consiste em tornar os postos de saúde mais inteligentes e eficientes,
+            com o uso de tecnologia e automação. A ideia é facilitar o atendimento ao paciente e melhorar a qualidade dos serviços prestados.
+            Com a implementação de sistemas de automação, será possível agilizar o atendimento,
+            reduzir filas e proporcionar um ambiente mais seguro contra infecções, doenças transmitidas pelo ar, etc,
+            tornando o local mais confortável e seguro para os pacientes.
+        </p>
+    </section>
+    <section class="section">
+        <img class="section__img-inline" src="{{ url_for('static', filename='img/img_apresentacao.jpg') }}" alt="" />
+        <div class="section__text-inline">
+            <p>
+                O nosso Sistema Único de Saúde, mais conhecido como SUS, é um dos maiores sistemas públicos de saúde do mundo.
+                Ele atende a mais de 200 milhões de brasileiros e é responsável por garantir o acesso universal e gratuito a serviços de saúde.
+                Contudo, o SUS enfrenta diversos desafios, como a falta de infraestrutura,
+                a escassez de recursos e a má gestão dos serviços de saúde.
+            </p>
+            <p>
+                Com isso em mente, planejamos evitar toda essa aglomeração de pessoas no local,
+                com que não tenhamos superlotação podendo assim evitar a transmissão de doenças.
+            </p>
+        </div>
+    </section>
+    <section class="section">
+        <h2 class="section__title">Inovação</h2>
+        <img class="section__img" src="{{ url_for('static', filename='img/img_apresentacao2.jpg') }}" alt="" />
+        <div class="section__text">
+            <p>
+                O nosso projeto consiste em criar um sensor que detecta a quantidade de pessoas no local,
+                e assim, quando atingir um certo limite, o sensor irá entender que está lotado, impedindo a entrada de mais pessoas,
+                evitando uma superlotação nos corredores e salas de espera.
+            </p>
+            <p>
+                Deste modo com a utilização do sensor, podemos evitar a superlotação e transmissão de doenças no local, 
+                proporcionando um ambiente mais seguro, e um atendimento mais eficiente e rápido.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Smart Close <br> Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

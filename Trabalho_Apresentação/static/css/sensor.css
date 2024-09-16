@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.a {
+    margin: .5rem;
+    display: flex;
+    margin-top: 0px;
+    padding: 1rem;
+    width: 11rem;
+    color: var(--color-white);
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--color-background);
+    border-radius: 10px;}
+
+.a:hover{
+    color: var(--color-gray)
+}
+
+:root {
+    --color-background: #030207;
+    --color-white: #fff;
+    --color-blue: #1474b4;
+    --color-gray: #808080;
+}
+
+a {
+    margin: .5rem;
+    display: flex;
+    margin-top: 0px;
+    padding: .5rem;
+    color: var(--color-white);
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover{
+    color: var(--color-gray)
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-white);
+}
+
+.inicio {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), var(--color-background));
+    position: relative;
+    min-height: 100vh;
+}
+
+.inicio__background {
+    object-fit: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+}
+
+.inicio__foreground {
+    text-align: center;
+    color: var(--color-white);
+    padding-top: 28vh;
+}
+
+.inicio__title {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.inicio__text {
+    margin-top: 2rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.section {
+    text-align: center;
+    padding: 0 8rem;
+    overflow: hidden;
+}
+
+.section__title {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 4rem auto;
+}
+
+.section__img,
+.section__img-inline {
+    border-radius: 1rem;
+    /* Eixo X, Eixo Y, Blur, Expansão/Recuo, cor */
+    box-shadow: 0rem 1rem 2rem -0.5rem rgba(255, 255, 255, 0.5);
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    width: 100%;
+    max-height: 30rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), var(--color-background));
+}
+
+.section__text,
+.section__text-inline {
+    font-size: 1.25rem;
+    line-height: 1.75;
+    margin: 4rem auto;
+}
+
+.section__img-inline {
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    float: left;
+    height: 25rem;
+    width: 20rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+}
+
+.section__text-inline {
+    text-align: left;
+    margin-top: 6rem;
+}
+
+.section__text-inline > p {
+    margin-top: 1.5rem;
+}
+
+footer {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.mqtt-messages {
+    background: var(--color-white);
+    color: var(--color-background);
+    padding: 1.5rem;
+    margin-top: 3.5rem;
+    border-radius: 1rem;
+}
+
+input {
+    background-color: var(--color-background);
+    color: var(--color-white);
+    padding: 1rem;
+    outline-color: transparent;
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: var(--color-white);
+}

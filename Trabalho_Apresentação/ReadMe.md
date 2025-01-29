@@ -4,4 +4,5 @@ Olá, esse projeto foi feito para automatizar os Hospitais, espero que gostem!
 2° passo, rodar o codigo create_user.py
 3° passo, rodar o codigo app.py
 
-Login e senha: user1
+Login: user1
+Password: password1
